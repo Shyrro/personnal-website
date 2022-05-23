@@ -7,7 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
+    "@nuxt/ui": "^0.1.1",
     "@unocss/nuxt": "^0.34.0",
-    "nuxt": "3.0.0-rc.3"
+    "nuxt": "3.0.0-rc.3",
+    "@nuxt/content-edge": "2.0.0-27555461.4c365fc"
   }
 }

@@ -1,59 +1,33 @@
 <template>
-  <div flex flex-row justify-start content-center w-full>
-    <div border-3 rounded-full h-max class="logo">
-      <img w-24 :src="logo" />
-    </div>
-
-    <div flex flex-col place-content-center>
+  <div flex flex-col justify-start content-center mb-2>
+    <div flex flex-row>
+      <div border-3 rounded-full h-max class="logo">
+        <img w-24 :src="logo" />
+      </div>
       <h4 text-label-primary mt-4 ml-4 my-0 py-0 flex flex-col>
         <p>1995-2000</p>
         <p>Entreprise</p>
         <p>Intitulé du poste</p>
       </h4>
-      <div class="experience-bloc" mt-10 h-max ref="experienceBloc">
+    </div>
+
+    <div flex flex-col place-content-center>
+      <div class="experience-bloc" mt-3 h-max ref="experienceBloc">
         <div class="experience-entry">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+           <ContentDoc path="/ovh" />
         </div>
         <div class="experience-entry">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+           <ContentDoc path="/ovh" />
         </div>
         <div class="experience-entry">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+           <ContentDoc path="/ovh" />
         </div>
         <div class="experience-entry">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+           <ContentDoc path="/ovh" />
+        </div>
+        <div mt-2>
+          <u><i>Languages & Frameworks</i> :</u>
+          <strong>&nbsp;&nbsp;Typescript, React, Vue</strong>
         </div>
       </div>
     </div>
@@ -70,9 +44,6 @@ defineProps({
     default: "#36279c",
   },
 });
-const experienceBloc = ref(null);
-const timelineHeight = computed(() => `${experienceBloc?.value?.clientHeight}px`);
-
 </script>
 <style scoped>
 .logo {
@@ -81,19 +52,20 @@ const timelineHeight = computed(() => `${experienceBloc?.value?.clientHeight}px`
     brightness(71%) contrast(115%);
 }
 
-.experience-bloc::before {
-  content: "";
-  position: absolute;
-  background-color: #bd2e00;
-  width: 0.2em;
-  height: v-bind(timelineHeight);
-  margin-left: -3rem;  
+.experience-bloc {
+  border-left: 0.2em solid #bd2e00;
+  padding-left: 5rem;
+  margin-left: 3.1rem;
+}
+
+.experience-entry {
+  --at-apply: mt-2;
 }
 
 .experience-entry::before {
   content: "";
   position: absolute;
-  margin-left: -3rem;
+  margin-left: -5rem;
   margin-top: 0.3rem;
   height: 0;
   width: 0;
