@@ -2,48 +2,46 @@
   <div flex flex-col justify-start content-center mb-2>
     <div flex flex-row>
       <div border-3 rounded-full h-max class="logo">
-        <img w-24 :src="logo" />
+        <img w-24 :src="experience.imgPath" />
       </div>
       <h4 text-label-primary mt-4 ml-4 my-0 py-0 flex flex-col>
-        <p>1995-2000</p>
-        <p>Entreprise</p>
-        <p>Intitulé du poste</p>
+        <p>{{ experience.year }}</p>
+        <p>{{ experience.companyName }}</p>
+        <p>{{ experience.positionTitle }}</p>
       </h4>
     </div>
 
     <div flex flex-col place-content-center>
       <div class="experience-bloc" mt-3 h-max ref="experienceBloc">
-        <div class="experience-entry">
-           <ContentDoc path="/ovh" />
-        </div>
-        <div class="experience-entry">
-           <ContentDoc path="/ovh" />
-        </div>
-        <div class="experience-entry">
-           <ContentDoc path="/ovh" />
-        </div>
-        <div class="experience-entry">
-           <ContentDoc path="/ovh" />
+        <div
+          v-for="expLinePath in experience.experienceLinesPaths"
+          :key="expLinePath"
+          class="experience-entry"
+        >
+          <ContentDoc :path="expLinePath" />
         </div>
         <div mt-2>
           <u><i>Languages & Frameworks</i> :</u>
-          <strong>&nbsp;&nbsp;Typescript, React, Vue</strong>
+          <strong>&nbsp;&nbsp;{{ languages }}</strong>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script lang="ts" setup>
-defineProps({
-  logo: {
-    type: String,
-    default: "",
-  },
+import { PropType } from "vue";
+
+const props = defineProps({
   borderColor: {
     type: String,
     default: "#36279c",
   },
+  experience: {
+    type: Object as PropType<CompanyExperience>,
+  },
 });
+
+const languages = computed(() => props.experience.technologies.join(", "));
 </script>
 <style scoped>
 .logo {
