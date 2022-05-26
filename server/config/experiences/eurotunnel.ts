@@ -2,7 +2,7 @@ const getLinkExperience: CompanyExperience = {
   companyName: "GetLink",
   positionTitle: "FullStack Software Engineer",
   year: "2014 - 2018",
-  imgPath: "/imgs/ovh-logo.png",
+  imgPath: "/imgs/Getlink_Logo.png",
   technologies: [
     "Javascript",
     "Typescript",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="w-2xl mx-auto mt-2">
+    <div class="max-w-2xl mx-auto mt-2">
       <Experience v-for="experience in experiences" :experience="experience" />
     </div>
   </div>
