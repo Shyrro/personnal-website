@@ -1,11 +1,10 @@
 <template>
   <div flex flex-col>
-    <div @click="toggleDark()" class="w-full h-20 border-b-3 borders">
+    <div @click="toggleDark()" class="h-20 border-b-3 borders">
       <slot name="sidebar" />
     </div>
-    <div w-screen>
-      <slot />
-    </div>
+
+    <slot />
   </div>
 </template>
 
@@ -13,8 +12,7 @@
 const colorMode = useColorMode();
 
 const toggleDark = () => {
-  colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-}
+  colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+};
 </script>
-<style scoped>
-</style>
+<style scoped></style>

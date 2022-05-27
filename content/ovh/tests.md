@@ -1,0 +1,3 @@
+During this experience, i took the **lead** into implementing automated tests for the **µFrontEnd** solution. 
+I also encouraged good practices while testing, so that we do not focus on how much we test but on how well we test, to help with that, i added the **Gherkin** constraint to improve tests readability and maintainabiliity. 
+We still have a lot of work to do, but it's on the good tracks and **i have a dream**, that one day, automated tests will be considered part of the development and not a *nice to have*.

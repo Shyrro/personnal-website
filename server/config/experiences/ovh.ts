@@ -3,8 +3,8 @@ const ovhExperience: CompanyExperience = {
   positionTitle: "FrontEnd Software Engineer",
   year: "2021 - Current",
   imgPath: "/imgs/ovh-logo.png",
-  technologies: ["Javascript", "Typescript", "React", "Vue", "Angular.js"],
-  experienceLinesPaths: ["/ovh", "/ovh", "/ovh"],
+  technologies: ["Typescript", "React", "Vue", "Vite", "Angular.js"],
+  experienceLinesPaths: ["/ovh/microfrontend", "/ovh/tests", "/ovh/typescript", "ovh/vuepoc"],
 };
 
 export default ovhExperience;

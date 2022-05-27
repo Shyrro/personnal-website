@@ -1,0 +1,2 @@
+**Typescript** is one of the 21th century biggest gifts to Web Development. It was very important to me that we all understand the benefits of it. So i rewrote old packages to demonstrate how easy we can do it, but also encouraged everything new to be written in **Typescript**. 
+I also took this as an opportunity to help my colleagues grow and help them learn more about it.

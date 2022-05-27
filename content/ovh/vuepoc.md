@@ -1,0 +1,2 @@
+First thing i did right when i arrived, was to rewrite the main dashboard in Vue, so that we could compare performance with the old **angular.js** app. 
+Obviously, no comparison is needed. Vue had much better performance, which also encouraged the whole squad to speed up the **micro-frontEnd** solution project.

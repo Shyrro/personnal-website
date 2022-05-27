@@ -1,11 +1,20 @@
 <template>
-  <div flex flex-col justify-start content-center mb-2 mt-10>
-    <div flex flex-row>
+  <div
+    flex
+    flex-col
+    justify-start
+    content-center
+    mb-2
+    mt-10
+    
+  >
+    <div flex flex-row v-motion-slide-visible-once-bottom>
       <div h-max class="logo-border">
         <img
           w-24
           h-24
           :src="experience.imgPath"
+          :class="color.preference === 'dark' ? 'logo' : 'logo-dark'"
         />
       </div>
       <h4 title mt-4 ml-4 my-0 py-0 flex flex-col>
@@ -23,6 +32,7 @@
         border-l-3
         borders
         ref="experienceBloc"
+        v-motion-slide-visible-once-bottom
       >
         <div
           v-for="expLinePath in experience.experienceLinesPaths"
@@ -47,6 +57,7 @@ const props = defineProps({
     type: Object as PropType<CompanyExperience>,
   },
 });
+const color = useColorMode();
 
 const languages = computed(() => props.experience.technologies.join(", "));
 </script>

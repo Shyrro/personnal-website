@@ -1,0 +1,3 @@
+Contributed to implementing the whole **Micro-FrontEnd** solution with a mix of a **React** App and **Typescript** libraries. 
+Obviously, i am not a fan of React (*because why would you still consider React in 2022?*) but most of my colleagues were hyped by React and not much by other things, and i'd rather have my colleagues enjoy what they do rather than try to force them into something they don't enjoy. 
+Building Software is a matter of Technologies, sure, but the wrong tech with the wrong team will slow the development process and create a bad atmosphere, so yep, i'd rather see my colleagues smile in the morning because they like React.
