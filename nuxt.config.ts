@@ -9,10 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vueuse/motion/nuxt",
   ],
-  css: [
-    '@fontsource/molle/400-italic.css',
-    '@fontsource/lobster',
-  ],
+  css: ["@fontsource/molle/400-italic.css", "@fontsource/lobster"],
   experimental: {
     reactivityTransform: true,
   },
@@ -38,6 +35,10 @@ export default defineNuxtConfig({
       borders: "border-primary dark:border-dark-primary",
     },
     theme: {
+      textShadow: {
+        contour:
+          "2px 0 0 #ff5B5B, -2px 0 0 #ff5B5B, 0 2px 0 #ff5B5B, 0 -2px 0 #ff5B5B, 1px 1px #ff5B5B, -1px -1px 0 #ff5B5B, 1px -1px 0 #ff5B5B, -1px 1px 0 #ff5B5B",
+      },
       colors: {
         primary: "#9c2727",
         darkPrimary: "#ff5B5B",
