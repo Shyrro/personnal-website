@@ -1,0 +1,1 @@
+This experience, in a nutshell, was mainly stressfull. Eventhough 

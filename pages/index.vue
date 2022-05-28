@@ -21,7 +21,7 @@
       dark:text-shadow-contour
       text-primary
       dark:text-white
-      v-motion-pop-visible-once
+      v-motion-slide-visible-once-bottom
     >
       Professionnal experiences
     </div>

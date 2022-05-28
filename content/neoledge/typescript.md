@@ -1,0 +1,1 @@
+Did a presentation of **Typescript** to the whole squad, which led to new projects being developed in it. Eventhough we were using **Vue 2**, i helped people get comfortable with Typescript. Also, since **Vue 2** had no TS support back then, i decided to go with the **class annotation notation**, to help the devs, that were mainly backend, get into Vue.js.
