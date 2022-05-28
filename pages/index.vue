@@ -13,12 +13,15 @@
         src="/imgs/profile_site.jpg"
       />
     </div>
+     <div w-full flex flex-col justify-center py-4 v-motion-pop>
+      <div text-4xl text-center lobster>Hi ! I'm <strong text-primary dark:text-dark-primary>Zak</strong> !</div>
+      <div text-4xl text-center lobster text-primary dark:text-dark-primary> The greatest worst developer</div>
+    </div>
     <div
-      class="title"
+      lobster
       w-full
       text-5xl
       text-center
-      dark:text-shadow-contour
       text-primary
       dark:text-white
       v-motion-slide-visible-once-bottom
@@ -32,8 +35,3 @@
 <script setup lang="ts">
 const { data: experiences } = await useFetch("/api/experiences/all");
 </script>
-<style scoped>
-.title {
-  font-family: "Lobster";
-}
-</style>

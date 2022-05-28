@@ -5,9 +5,9 @@ const neoledgeExperience: CompanyExperience = {
   imgPath: "/imgs/ovh-logo.png",
   technologies: ["Javascript", "C#", "Vue"],
   experienceLinesPaths: [
-    '/ovh',
-    '/ovh',
-    '/ovh',
+    '/neoledge/typescript',
+    '/neoledge/vuejstest',
+    '/neoledge/stress',
   ]
 };
 

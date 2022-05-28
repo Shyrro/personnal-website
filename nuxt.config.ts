@@ -14,8 +14,7 @@ export default defineNuxtConfig({
     reactivityTransform: true,
   },
   colorMode: {
-    preference: "system", // default value of $colorMode.preference
-    fallback: "light", // fallback value if not system preference found
+    preference: "dark", // default value of $colorMode.preference
     hid: "nuxt-color-mode-script",
     globalName: "__NUXT_COLOR_MODE__",
     componentName: "ColorScheme",
@@ -34,10 +33,11 @@ export default defineNuxtConfig({
       redBackground: "bg-primary dark:bg-dark-primary",
       borders: "border-primary dark:border-dark-primary",
     },
+    rules: [["lobster", { "font-family": "Lobster" }]],
     theme: {
       textShadow: {
         contour:
-          "2px 0 0 #ff5B5B, -2px 0 0 #ff5B5B, 0 2px 0 #ff5B5B, 0 -2px 0 #ff5B5B, 1px 1px #ff5B5B, -1px -1px 0 #ff5B5B, 1px -1px 0 #ff5B5B, -1px 1px 0 #ff5B5B",
+          "1px 0 0 #ff5B5B, -1px 0 0 #ff5B5B, 0 1px 0 #ff5B5B, 0 -1px 0 #ff5B5B, 1px 1px #ff5B5B, -1px -1px 0 #ff5B5B, 1px -1px 0 #ff5B5B, -1px 1px 0 #ff5B5B",
       },
       colors: {
         primary: "#9c2727",

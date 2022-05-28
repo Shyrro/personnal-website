@@ -1,1 +1,1 @@
-This experience, in a nutshell, was mainly stressfull. Eventhough 
+This experience, in a nutshell, was mainly stressfull. Eventhough the main product was in **Vue.js** we spent most of our time debugging very old stuff (like 20years old stuff) that no one understood or even had the skills for. So i basically learned to **adapt**, **learn** and be **automonous**, but also to stand in the way of management when they just wanted to sign their checks instead on focusing on building a solid product that is thought for the end users.
