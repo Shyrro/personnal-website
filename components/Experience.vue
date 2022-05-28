@@ -1,13 +1,5 @@
 <template>
-  <div
-    flex
-    flex-col
-    justify-start
-    content-center
-    mb-2
-    mt-10
-    
-  >
+  <div flex flex-col justify-start content-center mb-2 mt-10>
     <div flex flex-row v-motion-slide-visible-once-bottom>
       <div h-max class="logo-border">
         <img
@@ -17,7 +9,7 @@
           :class="color.preference === 'dark' ? 'logo' : 'logo-dark'"
         />
       </div>
-      <h4 title mt-4 ml-4 my-0 py-0 flex flex-col>
+      <h4 titleColor mt-4 ml-4 my-0 py-0 flex flex-col>
         <p>{{ experience.year }}</p>
         <p>{{ experience.companyName }}</p>
         <p>{{ experience.positionTitle }}</p>

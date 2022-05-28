@@ -1,9 +1,8 @@
 <template>
+  <div @click="toggleDark()" h-20 border-b-3 borders sticky>
+    <slot name="sidebar" />
+  </div>
   <div flex flex-col>
-    <div @click="toggleDark()" class="h-20 border-b-3 borders">
-      <slot name="sidebar" />
-    </div>
-
     <slot />
   </div>
 </template>

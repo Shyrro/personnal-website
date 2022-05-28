@@ -28,7 +28,7 @@ export default defineNuxtConfig({
     icons: true, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,*
     shortcuts: {
-      title: "text-label-primary dark:text-dark-primary",
+      titleColor: "text-label-primary dark:text-dark-primary",
       bodyText: "text-black dark:text-white",
       background: "bg-white dark:bg-background-dark",
       redBackground: "bg-primary dark:bg-dark-primary",

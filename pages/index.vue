@@ -1,9 +1,22 @@
 <template>
-  <div class="max-w-2xl mx-auto mt-2">
+  <div class="max-w-3xl mx-auto mt-2">
+    <div w-full flex justify-center py-4>
+      <img
+        w-16rem
+        rounded-full
+        border-6
+        border-primary
+        dark:border-dark-primary
+        shadow-md
+        dark:shadow-gray-500
+        v-motion-pop-visible-once
+        src="/imgs/profile_site.jpg"
+      />
+    </div>
     <div
       class="title"
       w-full
-      text-4xl
+      text-5xl
       text-center
       dark:text-shadow-contour
       text-primary
