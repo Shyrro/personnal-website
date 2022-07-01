@@ -10,11 +10,12 @@ const getLinkExperience: CompanyExperience = {
     "jQuery",
     "Angular.js",
     "Angular",
+    "D3.js",
+    "Highcharts.js"
   ],
   experienceLinesPaths: [
-    '/ovh',
-    '/ovh',
-    '/ovh',
+    '/eurotunnel/leaddev',
+    '/eurotunnel/dataviz',
   ]
 };
 export default getLinkExperience;

@@ -34,7 +34,7 @@
           <ContentDoc :path="expLinePath" />
         </div>
         <div mt-2>
-          <u><i>Languages & Frameworks</i> :</u>
+          💻 <u><i>Languages & Frameworks</i> :</u>
           <strong>&nbsp;&nbsp;{{ languages }}</strong>
         </div>
       </div>

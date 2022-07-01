@@ -22,19 +22,13 @@
         The greatest worst developer
       </div>
     </div>
-    <ContentDoc path="/"/>
-    <div
-      lobster
-      w-full
-      text-5xl
-      text-center
-      text-primary
-      dark:text-white
-      v-motion-slide-visible-once-bottom
-    >
-      Professionnal experiences
-    </div>
-    <Experience v-for="experience in experiences" :experience="experience" />
+    <ContentDoc path="/" />
+    <Section title="Hobbies & Motivations">
+      
+    </Section>
+    <Section title="Professionnal experiences">
+      <Experience v-for="experience in experiences" :experience="experience" />
+    </Section>
   </div>
 </template>
 
