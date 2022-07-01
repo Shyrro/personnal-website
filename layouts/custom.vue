@@ -2,7 +2,7 @@
   <div @click="toggleDark()" h-20 border-b-3 borders sticky>
     <slot name="sidebar" />
   </div>
-  <div flex flex-col>
+  <div flex flex-col p-4>
     <slot />
   </div>
 </template>

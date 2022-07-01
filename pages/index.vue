@@ -13,10 +13,15 @@
         src="/imgs/profile_site.jpg"
       />
     </div>
-     <div w-full flex flex-col justify-center py-4 v-motion-pop>
-      <div text-4xl text-center lobster>Hi ! I'm <strong text-primary dark:text-dark-primary>Zak</strong> !</div>
-      <div text-4xl text-center lobster text-primary dark:text-dark-primary> The greatest worst developer</div>
+    <div w-full flex flex-col justify-center py-4 v-motion-pop>
+      <div text-4xl text-center lobster>
+        Hi ! I'm <strong text-primary dark:text-dark-primary>Zak</strong> !
+      </div>
+      <div text-4xl text-center lobster text-primary dark:text-dark-primary>
+        The greatest worst developer
+      </div>
     </div>
+    <ContentDoc path="/"/>
     <div
       lobster
       w-full

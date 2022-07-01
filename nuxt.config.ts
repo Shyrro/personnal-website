@@ -1,5 +1,6 @@
 import { defineNuxtConfig } from "nuxt";
 import transformerDirective from "@unocss/transformer-directives";
+import { SERVFAIL } from "dns";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -9,7 +10,11 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vueuse/motion/nuxt",
   ],
-  css: ["@fontsource/molle/400-italic.css", "@fontsource/lobster"],
+  css: [
+    "@fontsource/molle/400-italic.css",
+    "@fontsource/lobster",
+    "@fontsource/cabin",
+  ],
   experimental: {
     reactivityTransform: true,
   },
@@ -33,7 +38,10 @@ export default defineNuxtConfig({
       redBackground: "bg-primary dark:bg-dark-primary",
       borders: "border-primary dark:border-dark-primary",
     },
-    rules: [["lobster", { "font-family": "Lobster" }]],
+    rules: [
+      ["lobster", { "font-family": "Lobster" }],
+      ["cabin", { "font-family": "Cabin" }],
+    ],
     theme: {
       textShadow: {
         contour:

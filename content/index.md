@@ -1,1 +1,1 @@
-#### index
+Hi there, welcome to my website ! If you're here, it means that you want to get to know me better !
