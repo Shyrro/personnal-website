@@ -54,6 +54,11 @@ const color = useColorMode();
 const languages = computed(() => props.experience.technologies.join(", "));
 </script>
 <style scoped>
+
+p {
+  --at-apply: m-0 ml-4 py-0;
+}
+
 .logo-border {
   --at-apply: border-5 rounded-full borders;
 }
