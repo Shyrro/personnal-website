@@ -11,6 +11,7 @@
         dark:shadow-gray-500
         v-motion-pop-visible-once
         src="/imgs/profile_site.jpg"
+        alt="Profile picture"
       />
     </div>
     <div w-full flex flex-col justify-center py-4 v-motion-pop>
