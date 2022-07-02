@@ -3,8 +3,10 @@
     <div flex flex-row v-motion-slide-visible-once-bottom>
       <div h-max class="logo-border">
         <img
-          w-24
-          h-24
+          md:w-24
+          md:h-24
+          xs:w-14
+          xs:h-14
           :src="experience.imgPath"
           :class="color.preference === 'dark' ? 'logo' : 'logo-dark'"
         />

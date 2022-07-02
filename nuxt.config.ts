@@ -1,6 +1,5 @@
 import { defineNuxtConfig } from "nuxt";
 import transformerDirective from "@unocss/transformer-directives";
-import { SERVFAIL } from "dns";
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
@@ -53,6 +52,10 @@ export default defineNuxtConfig({
         labelPrimary: "#851300",
         backgroundDark: "#22272e",
       },
+      // breakpoints: {
+      //   xs: "300px",
+      //   md: "640px",
+      // },
     },
     transformers: [transformerDirective()],
   },
