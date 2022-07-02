@@ -52,10 +52,10 @@ export default defineNuxtConfig({
         labelPrimary: "#851300",
         backgroundDark: "#22272e",
       },
-      // breakpoints: {
-      //   xs: "300px",
-      //   md: "640px",
-      // },
+      breakpoints: {
+        xs: "300px",
+        md: "640px",
+      },
     },
     transformers: [transformerDirective()],
   },

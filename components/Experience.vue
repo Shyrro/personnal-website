@@ -11,7 +11,7 @@
           :class="color.preference === 'dark' ? 'logo' : 'logo-dark'"
         />
       </div>
-      <h4 titleColor mt-4 ml-4 my-0 py-0 flex flex-col>
+      <h4 titleColor md:mt-4 md:ml-4 my-0 py-0 xs:mt-0 xs:ml-2 flex flex-col>
         <p>{{ experience.year }}</p>
         <p>{{ experience.companyName }}</p>
         <p>{{ experience.positionTitle }}</p>
@@ -58,7 +58,7 @@ const languages = computed(() => props.experience.technologies.join(", "));
 <style scoped>
 
 p {
-  --at-apply: m-0 ml-4 py-0;
+  --at-apply: m-0 md:ml-4 py-0 xs:ml-1;
 }
 
 .logo-border {
@@ -75,8 +75,7 @@ p {
 }
 
 .experience-bloc {
-  padding-left: 5rem;
-  margin-left: 3.1rem;
+  --at-apply: xs:pl-5 xs:ml-8 md:pl-5 md:ml-11;
 }
 
 .experience-entry {
@@ -86,9 +85,8 @@ p {
 .experience-entry::before {
   content: "";
   position: absolute;
-  margin-left: -5rem;
   margin-top: 0.3rem;
-  --at-apply: h-0 w-0 border-l-10 border-y-6 border-y-transparent border-l-primary dark:border-l-dark-primary;
+  --at-apply: h-0 w-0 xs:-ml-5 md:-ml-5 border-l-10 border-y-6 border-y-transparent border-l-primary dark:border-l-dark-primary;
 }
 
 p {
