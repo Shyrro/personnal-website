@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-3xl mx-auto mt-2">
+  <div class="max-w-4xl mx-auto mt-2">
     <div w-full flex justify-center py-4>
       <img
         w-16rem
@@ -10,7 +10,7 @@
         shadow-md
         dark:shadow-gray-500
         v-motion-pop-visible-once
-        src="/imgs/profile_site.jpg"
+        src="/imgs/profile_site.webp"
         alt="Profile picture"
       />
     </div>
