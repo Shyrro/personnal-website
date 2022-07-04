@@ -30,6 +30,24 @@ export default defineNuxtConfig({
     uno: true, // enabled `@unocss/preset-uno`
     icons: true, // enabled `@unocss/preset-icons`
     attributify: true, // enabled `@unocss/preset-attributify`,*
+    safelist: [
+      "i-vscode-icons-file-type-typescript",
+      "i-vscode-icons-file-type-vite",
+      "i-vscode-icons-file-type-reactjs",
+      "i-vscode-icons-file-type-ng-component-js",
+      "i-vscode-icons-file-type-csharp",
+      "i-vscode-icons-file-type-vue",
+      "i-vscode-icons-file-type-js-official",
+      "i-vscode-icons-file-type-js",
+      "bg-cyan",
+      "bg-purple",
+      "bg-blue-600",
+      "bg-primary",
+      "bg-green-400",
+      "bg-green-700",
+      "bg-orange",
+      "bg-purple-600",
+    ],
     shortcuts: {
       titleColor: "text-label-primary dark:text-dark-primary",
       bodyText: "text-black dark:text-white",

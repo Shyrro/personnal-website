@@ -3,6 +3,6 @@ interface CompanyExperience {
   positionTitle: string;
   year: string;
   imgPath: string;
-  technologies: Array<string>;
+  technologies: Array<CodingLang>;
   experienceLinesPaths: Array<string>;
 }

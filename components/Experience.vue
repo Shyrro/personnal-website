@@ -35,9 +35,15 @@
         >
           <ContentDoc :path="expLinePath" />
         </div>
-        <div mt-2>
-          💻 <u><i>Languages & Frameworks</i> :</u>
-          <strong>&nbsp;&nbsp;{{ languages }}</strong>
+        <div mt-2 flex flex-wrap>
+          💻 <u >Languages & Frameworks:</u>
+          <TechBadge
+            mx-1
+            xs:my-1
+            v-for="tech in experience.technologies"
+            :key="tech"
+            :techlang="tech"
+          ></TechBadge>
         </div>
       </div>
     </div>
@@ -75,7 +81,7 @@ p {
 }
 
 .experience-bloc {
-  --at-apply: xs:pl-5 xs:ml-8 md:pl-5 md:ml-11;
+  --at-apply: xs:pl-5 xs:ml-8 md:pl-4 md:ml-13;
 }
 
 .experience-entry {
@@ -86,10 +92,6 @@ p {
   content: "";
   position: absolute;
   margin-top: 0.3rem;
-  --at-apply: h-0 w-0 xs:-ml-5 md:-ml-5 border-l-10 border-y-6 border-y-transparent border-l-primary dark:border-l-dark-primary;
-}
-
-p {
-  margin: 0rem inherit;
+  --at-apply: h-0 w-0 xs:-ml-5 md:-ml-4 border-l-10 border-y-6 border-y-transparent border-l-primary dark:border-l-dark-primary;
 }
 </style>
